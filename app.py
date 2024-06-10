@@ -33,6 +33,14 @@ def QA_response(text):
         )
     return output.answers[0].answer
 
+const client = new line.Client(config);
+
+function handleEvent(event) {
+  if (event.type === 'message' && event.message.type === 'text') {
+    return client.replyMessage(event.replyToken, {
+      type: 'text',
+      text: event.message.text // 回應用戶發送的相同文字
+
 def words_English_to_Chinese(word):
     # 字母與數字的映射字典
     words_dict = {
