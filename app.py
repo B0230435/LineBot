@@ -41,27 +41,6 @@ function handleEvent(event) {
       type: 'text',
       text: event.message.text // 回應用戶發送的相同文字
 
-def words_English_to_Chinese(word):
-    # 字母與數字的映射字典
-    words_dict = {
-        "apple": "蘋果",
-        "banana": "香蕉",
-        "cat": "貓",
-        "dog": "狗",
-        "elephant": "大象",
-        "flower": "花",
-        "guitar": "吉他",
-        "house": "房子",
-        "ice": "冰",
-        "jacket": "夾克"
-    }
-    if word in words_dict:
-        word=words_dict[word]
-    else:
-        word="該單字不在字典中。"
-    return words_English_to_Chinese(word)
-
-
 
 
 # 監聽所有來自 /callback 的 Post Request
